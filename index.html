@@ -15,16 +15,41 @@
     <header>
         <div class="navbar bg-base-100 shadow-2xl lg:px-12">
             <div class="flex-1">
-                <a class="text-3xl font-bold ">Interactive <br> <span class="text-xl text-slate-500">Geometry
-                        Geinus</span></a>
-
+                <a class="text-3xl font-bold ">Interactive <br> <span
+                        class="text-xl text-slate-500">GeometryGeinus</span></a>
             </div>
             <div class="flex-none">
                 <button class="btn btn-primary px-7">Blog</button>
-
             </div>
         </div>
     </header>
+
+    <main class="lg:px-12">
+        <!-- card section -->
+        <section class="mt-10">
+            <div class="grid md:grid-cols-3 lg:grid-cols-3">
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="images/triangle.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title font-bold text-2xl">Triangle</h2>
+                        <p>Area (A) = 0.5 * b * h</p>
+                        <div class="grid-cols-2">
+                            <input class=" bg-gray-100 px-5 w-1/4" type="text" placeholder="b"><span
+                                class="mx-2">cm</span>
+                            <input class=" bg-gray-100 px-5 w-1/4" type="text" placeholder="h"><span
+                                class="mx-2">cm</span>
+                        </div>
+                        <div class="card-actions mt-3">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="result-part"></div>
+            </div>
+        </section>
+    </main>
 
 
 
