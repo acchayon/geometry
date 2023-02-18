@@ -7,7 +7,8 @@ document.getElementById('triangle-btn').addEventListener('click', function(){
     const productName = document.getElementById('triangle-name').innerText;
     const productFirstInput = document.getElementById('triangle-first-input').value;
     const productSecondInput = document.getElementById('triangle-second-input').value;
-    const productArea = 0.5 * productFirstInput * productSecondInput;
+    const productArea = parseFloat(0.5 * productFirstInput * productSecondInput).toFixed(2);
+
 
     displayData(serial, productName, productArea);
        
@@ -34,7 +35,7 @@ document.getElementById('parallel-btn').addEventListener('click', function(){
     const productName = document.getElementById('parallelogram-name').innerText;
     const productFirstInput = document.getElementById('parallel-first-input').value;
     const productSecondInput = document.getElementById('parallel-second-input').value;
-    const productArea = productFirstInput * productSecondInput;
+    const productArea = parseFloat(productFirstInput * productSecondInput).toFixed(2);
 
     showData(serial, productName, productArea);
        
@@ -48,7 +49,7 @@ document.getElementById('rhombos-btn').addEventListener('click', function(){
     const productName = document.getElementById('rhombos-name').innerText;
     const productFirstInput = document.getElementById('rhombos-first-input').value;
     const productSecondInput = document.getElementById('rhombos-second-input').value;
-    const productArea = 0.5 * productFirstInput * productSecondInput;
+    const productArea = parseFloat(0.5 * productFirstInput * productSecondInput).toFixed(2);
 
     displayData(serial, productName, productArea);
        
@@ -61,7 +62,7 @@ document.getElementById('pentagon-btn').addEventListener('click', function(){
     const productName = document.getElementById('pentagon-name').innerText;
     const productFirstInput = document.getElementById('pentagon-first-input').value;
     const productSecondInput = document.getElementById('pentagon-second-input').value;
-    const productArea = 0.5 * productFirstInput * productSecondInput;
+    const productArea = parseFloat(0.5 * productFirstInput * productSecondInput).toFixed(2);
 
     displayData(serial, productName, productArea);
        
@@ -93,7 +94,8 @@ function displayData(serial, productName, productArea){
     tr.innerHTML=`
     <td>${serial}</td>  
     <td>${productName}</td>   
-    <td>${productArea}cm<sup>2</sup></td>`; 
+    <td>${productArea}cm<sup>2</sup></td>
+    <td><button class="btn btn-primary">Convert to m<sup>2</sup></button></td>`; 
     container.appendChild(tr);
 }
 
@@ -107,6 +109,13 @@ function showData(serial, productName, productArea){
     tr.innerHTML=`
     <td>${serial}</td>  
     <td>${productName}</td>   
-    <td>${productArea}cm<sup>2</sup></td>`; 
+    <td>${productArea}cm<sup>2</sup></td>
+    <td><button class="btn btn-primary">Convert to m<sup>2</sup></button></td>`; 
     container.appendChild(tr);
 }
+
+
+// ----------- blog btn for blog questions-------------------- //
+document.getElementById('blog-btn').addEventListener('click', function(){
+    window.location.href = 'blog.html';
+})
