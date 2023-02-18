@@ -69,7 +69,18 @@ document.getElementById('pentagon-btn').addEventListener('click', function(){
 
 
 // ------------------- ellipse ----------------- //
+document.getElementById('ellipse-btn').addEventListener('click', function(){
+    serial += 1;
 
+    const productName = document.getElementById('ellipse-name').innerText;
+    const productFirstInput = document.getElementById('ellipse-first-input').value;
+    const productSecondInput = document.getElementById('ellipse-second-input').value;
+    const pi = 3.14;
+    const productArea = parseFloat(pi * productFirstInput * productSecondInput).toFixed(2);
+
+    showData(serial, productName, productArea);
+       
+})
 
 
 
