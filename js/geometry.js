@@ -43,6 +43,19 @@ document.getElementById('rhombos-btn').addEventListener('click', function(){
        
 })
 
+// ------------------- Pentagon --------------------- //
+document.getElementById('pentagon-btn').addEventListener('click', function(){
+    serial += 1;
+
+    const productName = document.getElementById('pentagon-name').innerText;
+    const productFirstInput = document.getElementById('pentagon-first-input').value;
+    const productSecondInput = document.getElementById('pentagon-second-input').value;
+    const productArea = 0.5 * productFirstInput * productSecondInput;
+
+    displayData(serial, productName, productArea);
+       
+})
+
 
 
 
