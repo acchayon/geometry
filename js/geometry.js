@@ -14,7 +14,18 @@ document.getElementById('triangle-btn').addEventListener('click', function(){
 })
 
 
+// -------------- rectangle ------------------- //
+document.getElementById('rectangle-btn').addEventListener('click', function(){
+    serial += 1;
 
+    const productName = document.getElementById('rectangle-name').innerText;
+    const productFirstInput = document.getElementById('rectangle-first-input').value;
+    const productSecondInput = document.getElementById('rectangle-second-input').value;
+    const productArea = productFirstInput * productSecondInput;
+
+    displayData(serial, productName, productArea);
+       
+})
 
 
 
