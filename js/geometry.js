@@ -28,6 +28,17 @@ document.getElementById('rectangle-btn').addEventListener('click', function(){
 })
 
 // -------------- parallelogram ------------------ //
+document.getElementById('parallel-btn').addEventListener('click', function(){
+    serial += 1;
+
+    const productName = document.getElementById('parallelogram-name').innerText;
+    const productFirstInput = document.getElementById('parallel-first-input').value;
+    const productSecondInput = document.getElementById('parallel-second-input').value;
+    const productArea = productFirstInput * productSecondInput;
+
+    showData(serial, productName, productArea);
+       
+})
 
 
 // --------------- Rhombos -------------------- //
@@ -57,9 +68,12 @@ document.getElementById('pentagon-btn').addEventListener('click', function(){
 })
 
 
+// ------------------- ellipse ----------------- //
 
 
-// ----------- common function ---------------- //
+
+
+// ----------- common function 1 ---------------- //
 function displayData(serial, productName, productArea){
     const container = document.getElementById('table-container');
     
@@ -72,3 +86,16 @@ function displayData(serial, productName, productArea){
     container.appendChild(tr);
 }
 
+
+// ---------------- common function 2 ---------------//
+function showData(serial, productName, productArea){
+    const container = document.getElementById('table-container');
+    
+
+    const tr = document.createElement('tr');
+    tr.innerHTML=`
+    <td>${serial}</td>  
+    <td>${productName}</td>   
+    <td>${productArea}cm<sup>2</sup></td>`; 
+    container.appendChild(tr);
+}

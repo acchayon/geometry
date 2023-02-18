@@ -72,17 +72,17 @@
                         <img src="images/parallelogram.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title font-bold text-2xl">Parallelogram</h2>
+                        <h2 id="parallelogram-name" class="card-title font-bold text-2xl">Parallelogram</h2>
                         <p>Area (A) = b &Cross; h</p>
                         <p>b=<span>10</span>cm, h=<span>12</span>cm</p>
                         <div class="grid-cols-2">
-                            <input class=" bg-gray-100 px-5 w-1/4" type="text" placeholder="b"><span
-                                class="mx-2">cm</span>
-                            <input class=" bg-gray-100 px-5 w-1/4" type="text" placeholder="h"><span
-                                class="mx-2">cm</span>
+                            <input id="parallel-first-input" class=" bg-gray-100 px-5 w-1/4" type="text"
+                                placeholder="b"><span class="mx-2">cm</span>
+                            <input id="parallel-second-input" class=" bg-gray-100 px-5 w-1/4" type="text"
+                                placeholder="h"><span class="mx-2">cm</span>
                         </div>
                         <div class="card-actions mt-3">
-                            <button class="btn btn-primary">CALCULATE</button>
+                            <button id="parallel-btn" class="btn btn-primary">CALCULATE</button>
                         </div>
                     </div>
                 </div>
@@ -149,8 +149,8 @@
             </div>
 
             <!-- result details part -->
-            <div class="result-details w-[30%] mx-auto">
-                <h1 class="text-3xl font-bold  underline"> Area Calculation</h1>
+            <div class="result-details w-[30%] border border-slate-600">
+                <h1 class="text-3xl font-bold text-center underline"> Area Calculation</h1>
 
                 <!-- table for show output -->
                 <div class="overflow-x-auto">
