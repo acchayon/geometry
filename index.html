@@ -27,7 +27,8 @@
     <main>
         <!-- card section -->
         <section class="mt-10 lg:px-12 flex flex-col md:flex-row lg:flex-row ">
-            <div class="card-details w-[65%] grid md:grid-cols-2 lg:grid-cols-3 gap-3 ">
+            <div class="card-details w-[75%] grid md:grid-cols-2 lg:grid-cols-3 gap-3 ">
+                <!-- triangle -->
                 <div class="card w-full bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
                         <img src="images/triangle.png" alt="Shoes" class="rounded-xl" />
@@ -46,6 +47,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- rectangle -->
                 <div class="card w-full bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
                         <img src="images/rectangle.png" alt="Shoes" class="rounded-xl" />
@@ -64,6 +66,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- parallelogram -->
                 <div class="card w-full bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
                         <img src="images/parallelogram.png" alt="Shoes" class="rounded-xl" />
@@ -83,25 +86,27 @@
                         </div>
                     </div>
                 </div>
+                <!-- Rhombos -->
                 <div class="card w-full bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
                         <img src="images/rhombus.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title font-bold text-2xl">Rhombos</h2>
+                        <h2 id="rhombos-name" class="card-title font-bold text-2xl">Rhombos</h2>
                         <p>Area (A) = 0.5 &Cross; d<sub>1</sub> &Cross; d<sub>2</sub></p>
                         <p>d<sub>1</sub>= <span>16</span>cm, d<sub>2</sub>= <span>8</span>cm</p>
                         <div class="grid-cols-2">
-                            <input class=" bg-gray-100 px-5 w-1/4" type="text" placeholder="d1"><span
-                                class="mx-2">cm</span>
-                            <input class=" bg-gray-100 px-5 w-1/4" type="text" placeholder="d2"><span
-                                class="mx-2">cm</span>
+                            <input id="rhombos-first-input" class=" bg-gray-100 px-5 w-1/4" type="text"
+                                placeholder="d1"><span class="mx-2">cm</span>
+                            <input id="rhombos-second-input" class=" bg-gray-100 px-5 w-1/4" type="text"
+                                placeholder="d2"><span class="mx-2">cm</span>
                         </div>
                         <div class="card-actions mt-3">
-                            <button class="btn btn-primary ">CALCULATE</button>
+                            <button id="rhombos-btn" class="btn btn-primary ">CALCULATE</button>
                         </div>
                     </div>
                 </div>
+                <!-- Pentagon -->
                 <div class="card w-full bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
                         <img src="images/pentagon.png" alt="Shoes" class="rounded-xl" />
@@ -121,6 +126,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- ellipse -->
                 <div class="card w-full bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
                         <img src="images/ellipse.png" alt="Shoes" class="rounded-xl" />
@@ -141,11 +147,12 @@
                     </div>
                 </div>
             </div>
+
             <!-- result details part -->
             <div class="result-details w-[30%] mx-auto">
                 <h1 class="text-3xl font-bold  underline"> Area Calculation</h1>
 
-                <!-- table ofr show output -->
+                <!-- table for show output -->
                 <div class="overflow-x-auto">
                     <table id="table-container" class="table w-full">
                     </table>

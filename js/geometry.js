@@ -27,6 +27,23 @@ document.getElementById('rectangle-btn').addEventListener('click', function(){
        
 })
 
+// -------------- parallelogram ------------------ //
+
+
+// --------------- Rhombos -------------------- //
+document.getElementById('rhombos-btn').addEventListener('click', function(){
+    serial += 1;
+
+    const productName = document.getElementById('rhombos-name').innerText;
+    const productFirstInput = document.getElementById('rhombos-first-input').value;
+    const productSecondInput = document.getElementById('rhombos-second-input').value;
+    const productArea = 0.5 * productFirstInput * productSecondInput;
+
+    displayData(serial, productName, productArea);
+       
+})
+
+
 
 
 // ----------- common function ---------------- //
