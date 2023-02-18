@@ -127,42 +127,6 @@ document.getElementById('blog-btn').addEventListener('click', function(){
 
 
 // ----------- random bg color for all cards -------------- //
-// function genarateColor() {
-//     const red = Math.floor(Math.random() * 256);
-//     const green = Math.floor(Math.random() * 256);
-//     const blue = Math.floor(Math.random() * 256);
-//     return `rgb${red}, ${green}, ${blue}`;
-//     }
-
-
-
-    // function main(){
-    //     const cardArea = document.getElementById('card-area');
-    //     const getCard = document.getElementById('triangle-card');
-
-    //     getCard.addEventListener('click', function(){
-    //         const bgColor = genarateColor();
-    //         cardArea.style.color= bgColor;
-    //     })
-    // }
-
-
-    // function randomColor() {
-    //     let color = [];
-    //     for (let i = 0; i < 3; i++) {
-    //       color.push(Math.floor(Math.random() * 256));
-    //     }
-    //     return 'rgb(' + color.join(', ') + ')';
-    //   } 
-      
-    //   document.addEventListener("mouseover", function(){
-    //     document.body.style.backgroundColor = randomColor();
-    //   });
-      
-    //   document.querySelector('card').addEventListener('mouseover', event => {
-    //         event.target.style.fill = randomColor();
-    //   });
-
 
     function cardColor(getClass){
         const randomCard = document.getElementsByClassName(getClass);
